@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable, file_names
+
 import 'package:flutter/material.dart';
 
 class ContainerStack extends StatelessWidget {
@@ -65,54 +67,48 @@ class ContainerStack extends StatelessWidget {
           Positioned(
             left: 10,
             top: 45,
-            child: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    height: 50,
-                    width: 50,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(
+                    color: const Color(0xfff5ffff),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Container(
+                    height: 30,
+                    width: 30,
                     decoration: BoxDecoration(
-                      color: const Color(0xfff5ffff),
+                      color: iconCircleColor,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        color: iconCircleColor,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      child: Icon(
-                        icon,
-                        color: iconColor,
-                      ),
+                    child: Icon(
+                      icon,
+                      color: iconColor,
                     ),
                   ),
-                  const SizedBox(
-                    height: 10,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    color: Color(0xfffcfeff),
                   ),
-                  Container(
-                    child: Text(
-                      title,
-                      style: const TextStyle(
-                        fontSize: 13,
-                        color: Color(0xfffcfeff),
-                      ),
-                    ),
+                ),
+                Text(
+                  item,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Color(0xfffcfeff),
                   ),
-                  Container(
-                    child: Text(
-                      item,
-                      style: const TextStyle(
-                        fontSize: 12,
-                        color: Color(0xfffcfeff),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],

@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Stack(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.notifications_outlined,
                       size: 25,
                       color: Color(0xffa7b5bc),
@@ -44,17 +44,17 @@ class HomeScreen extends StatelessWidget {
                     Positioned(
                       right: 3,
                       child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xfffb3e35),
+                          borderRadius: BorderRadius.circular(30),
+                        ),
                         height: 12,
                         width: 12,
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "3",
                             style: TextStyle(color: Colors.white, fontSize: 10),
                           ),
-                        ),
-                        decoration: BoxDecoration(
-                          color: Color(0xfffb3e35),
-                          borderRadius: BorderRadius.circular(30),
                         ),
                       ),
                     ),
@@ -154,7 +154,7 @@ class HomeScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               CupertinoPageRoute(
-                                builder: (context) => TransactionScreen(),
+                                builder: (context) => const TransactionScreen(),
                               ));
                         },
                         child: ContainerStack(
@@ -174,7 +174,7 @@ class HomeScreen extends StatelessWidget {
                       widgetColor: const Color(0xffff5949).withOpacity(.8),
                       icon: Icons.savings,
                       iconColor: const Color(0xffff5949).withOpacity(.8),
-                      iconCircleColor: Color(0xfffcfeff),
+                      iconCircleColor: const Color(0xfffcfeff),
                     ),
                   ],
                 ),
@@ -186,7 +186,7 @@ class HomeScreen extends StatelessWidget {
                       widgetColor: const Color(0xffecad49).withOpacity(.7),
                       icon: Icons.star,
                       iconColor: const Color(0xffecad49).withOpacity(.7),
-                      iconCircleColor: Color(0xfffcfeff),
+                      iconCircleColor: const Color(0xfffcfeff),
                     ),
                     ContainerStack(
                       title: "Credit Cards",
@@ -201,12 +201,12 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Container(
-            margin: EdgeInsets.only(left: 30),
-            child: Text(
+            margin: const EdgeInsets.only(left: 30),
+            child: const Text(
               "Choose a categories",
               style: TextStyle(
                 color: Color(0xff141e3c),
@@ -215,7 +215,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Row(
@@ -227,19 +227,19 @@ class HomeScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     border: Border.all(
                       width: .5,
-                      color: Color(0xff141e3c).withOpacity(.5),
+                      color: const Color(0xff141e3c).withOpacity(.5),
                     ),
                     borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      margin: EdgeInsets.all(10),
+                      margin: const EdgeInsets.all(10),
                       height: 35,
                       width: 35,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
-                        color: Color(0xff62dffe),
+                        color: const Color(0xff62dffe),
                       ),
                       child: const Icon(
                         Icons.home,

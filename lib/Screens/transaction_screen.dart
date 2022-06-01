@@ -33,7 +33,7 @@ class TransactionScreen extends StatelessWidget {
                       ),
                       Stack(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.notifications_outlined,
                             size: 25,
                             color: Color(0xffa7b5bc),
@@ -43,16 +43,16 @@ class TransactionScreen extends StatelessWidget {
                             child: Container(
                               height: 12,
                               width: 12,
-                              child: Center(
+                              decoration: BoxDecoration(
+                                color: const Color(0xfffb3e35),
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Center(
                                 child: Text(
                                   "3",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 10),
                                 ),
-                              ),
-                              decoration: BoxDecoration(
-                                color: Color(0xfffb3e35),
-                                borderRadius: BorderRadius.circular(30),
                               ),
                             ),
                           ),
