@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-! [Imgur](https://i.imgur.com/mZfwrhw.jpeg) 
+<img src="https://i.imgur.com/mZfwrhw.jpg" alt="Ui" style="height: 100px; width:100px;"/>
 
 A few resources to get you started if this is your first Flutter project:
 
